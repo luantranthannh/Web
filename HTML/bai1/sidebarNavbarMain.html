@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+   
+    <title>Cv </title>
+
+    <style>
+        /* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+} */
+
+/* Thêm các kiểu định dạng khác cho phần main và các phần tử khác nếu cần */
+/* Responsive styles  nav-main-side */
+/* @media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main {
+        order: -1;
+    }
+
+    .sidebar, .main {
+        flex: 1;
+    }
+}  */
+
+
+
+/* cách tối ưu 2 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    order: 1; /* Đổi thứ tự hiển thị của .sidebar */
+}
+
+.main {
+    flex: 2;
+    padding: 20px;
+    order: 2; /* Đổi thứ tự hiển thị của .main */
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: block; /* Hiển thị .navbar mặc định */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .main {
+        flex: 1;
+        order: 0; /* Đặt lại thứ tự hiển thị của .sidebar và .main */
+    }
+
+    .navbar {
+        display: none; /* Ẩn .navbar khi màn hình nhỏ hơn 768px */
+    }
+
+    .menu-checkbox {
+        display: none; /* Ẩn checkbox mặc định */
+    }
+
+    .menu-button {
+        display: block; /* Hiển thị nút khi màn hình nhỏ hơn 768px */
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    /* Hiển thị .navbar khi checkbox được check */
+    .menu-checkbox:checked + .menu-button + .navbar {
+        display: block;
+    }
+}
+
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Nội dung của sidebar ở đây -->
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </div>
+        <div class="main">
+            <div class="navbar">
+                <!-- Nội dung của navbar ở đây -->
+                <h1>Navbar</h1>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <!-- Nội dung của phần main ở đây -->
+                <h1>Main Content</h1>
+                <p>This is the main content area of the cover letter.</p>
+            </div>
+        </div>
+        <input type="checkbox" class="menu-checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-button">Menu</label>
+    </div>
+
+
+</body>
+
+</html>

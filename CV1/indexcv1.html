@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CV1/maincv1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Luan's CV</title>
+
+    <style>
+        :root {
+            --navbar-height: 144px;
+            --default-margin: 40px;
+        }
+
+        .container {
+            max-width: 1310px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+        }
+
+        /* bên trái */
+        .sidebar {
+            width: 400px;
+            height: 854px;
+            background-color: skyblue;
+            /* left: 315px;
+            top: 120px; */
+
+        }
+
+        /* bên phải trên */
+        .navbar {
+            width: 560px;
+            height: 144px;
+            background: khaki;
+            border-radius: 16px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .main {
+            background-color: rgba(201, 235, 191, 0.815);
+            border-radius: 16px;
+            height: 3600px;
+            width: 100%;
+            margin-top: calc(var(--navbar-height) + var(--default-margin));
+            margin-left: var(--default-margin);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="sidebar">
+            <div class="personal-infor">
+                <center>
+                    <img id="avt" src="../images/avt-Luân2.png" alt=" ảnh avt">
+                </center>
+
+                <p id="name-candidate">Mr. Luan Tran</p>
+                <p id="position-candidate">Front-end Developer</p>
+
+
+                <div class="social-icons">
+                    <div class="facebook">
+                        <img src="../../icons//icon fb.png" alt="">
+                    </div>
+
+                    <div class="twitter">
+                        <img src="../../icons/icon stwiter.svg" alt="">
+                    </div>
+
+                    <div class="instagram">
+                        <img src="../../icons/icon intagram.png" alt="">
+                    </div>
+
+                    <div class="linkin">
+                        <img src="../../icons/icon linkin.png" alt="">
+                    </div>
+
+
+                </div>
+
+                <div class="cart">
+                    <div class="phone">
+                        <div class="cart-icon">
+                            <img src="../../icons/icon phone.png" alt="">
+                        </div>
+
+                        <div class="cart-infor">
+                            <p>Phone</p>
+                            <span>(+84)36 9080 435</span>
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+                    <div class="email">
+                        <div class="cart-icon">
+                            <img src="../../icons/icon email.png" alt="">
+                        </div>
+
+                        <div class="cart-infor">
+                            <p>Email</p>
+                            <div id="email-address">
+                                luan.tran25@student.passerellesnumeriques.org</div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+
+                    <div class="location">
+
+                        <div class="cart-icon">
+                            <img src="../../icons/icon location.png" alt="">
+                        </div>
+
+                        <div class="cart-infor">
+                            <p>Location </p>
+                            <span>Da Nang City, VietNam</span>
+
+                        </div>
+
+
+                    </div>
+                    <hr>
+
+                    <div class="birthday">
+
+
+                        <div class="cart-icon">
+                            <img src="../../icons/icon birthday.png" alt="">
+                        </div>
+
+                        <div class="cart-infor">
+                            <p>Birthday </p>
+                            <span> March 19, 2004 </span>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <button type="button" class="button">
+                    <span class="button--icon">
+                        <img src="../../icons/icon download.png" alt="">
+                    </span>
+
+                    <span class="button--text">Download Resume </span>
+
+
+
+                </button>
+
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="navbar-about">
+                <img src="../icons/icon contact.png" alt="">
+                <div><span>About</span></div>
+
+            </div>
+
+
+            <div class="navbar-education">
+                <img src="../icons/icon resume.png" alt="">
+                <div><span>Education</span></div>
+            </div>
+
+            <div class="navbar-experience">
+                <img src="../../icons/icon contact.png" alt="">
+                <div><span>Experience</span></div>
+            </div>
+
+            <div class="navbar-history">
+                <img src="../../icons/icon contact.png" alt="">
+                <div><span>History</span></div>
+            </div>
+
+            <div class="navbar-knowledge">
+                <img src="../../icons/icon blogs.png" alt="">
+                <div><span>Knowledge</span></div>
+            </div>
+
+        </div>
+
+        <section class="main">
+            <div class="bg--gray">
+                <div class="wrapper">
+                    <div class="wrapper__header">
+                        <p class="wrapper__header__title">Resume</p>
+                    </div>
+
+
+                    <div class="list__title">
+                        <img src="../icons/icon about me.png" alt="About me icon">
+                        <p class="list-title-name">About</p>
+                    </div>
+
+                    <ul class="list__content__description">
+                        <li>4+ years working experience as a Front-end developer (ReactJS - NextJS).</li>
+                        <li>1+ years working experience as a back-end developer (NodeJS).</li>
+                        <li>3+ years of experience working as a web designer.</li>
+                        <li>Excellent team and time management skills with the goal of achieving the best results.</li>
+                        <li>Self-motivated, team player with strong organizational and interpersonal skills.</li>
+                        <li>Support new members to improve their skills, discuss and propose optimal solutions for the
+                            system.</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- education + experience -->
+            <div class="wrapper2">
+                <div class="wrapper__list">
+                    <!-- education -->
+                    <div class="list--left">
+                        <div class="list__title">
+                            <img src="../icons/icon-tốt nghiêp.png" alt="icon education">
+                            <p class="list-title-name">Education</p>
+                        </div>
+
+                        <div class="list__content">
+                            <div class="list__content__item1">
+                                <p class="list__content__time">08.2015 - 06.2019</p>
+                                <p class="list__content__location">Management Information System
+                                    <span class="list__content__address">- The University of Danang - University of
+                                        Economics</span>
+                                </p>
+
+                            </div>
+
+                            <div class="list__content__item2">
+                                <p class="list__content__time">11.2017 - 01.2018</p>
+                                <p class="list__content__location">MCSA certificate
+                                    <span class="list__content__address">- DNICT Danang</span>
+                                </p>
+
+                            </div>
+
+                            <div class="list__content__item3">
+                                <p class="list__content__time">04.2021 - 05.2021</p>
+                                <p class="list__content__location">NodeJS
+                                    <span class="list__content__address">- JavaScript & Node Express in Wiicamp</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="list--right">
+                        <div class="list__title">
+                            <img src="../icons/icon -kinh nghiẹm.png" alt="icon experience">
+                            <p class="list-title-name">Experience</p>
+                        </div>
+
+                        <div class="list__content">
+                            <div class="list__content__item1">
+                                <p class="list__content__time">01.2019 - 05.2021</p>
+                                <p class="list__content__location">Software Engineer</p>
+                                <p class="list__content__address">Orient Software.</p>
+
+                            </div>
+
+                            <div class="list__content__item2">
+                                <p class="list__content__time">05.2021 - Present</p>
+                                <p class="list__content__location">Full Stack Software Engineer</p>
+                                <p class="list__content__address">Wiicamp.</p>
+
+                            </div>
+
+                            <div class="list__content__item3">
+                                <p class="list__content__time">
+                                    03.2023 - Present</p>
+                                <p class="list__content__location">Lecturer NodeJS & NextJS</p>
+                                <p class="list__content__address">Wiicamp.</p>
+
+                            </div>
+                            <div class="list__content__item3">
+                                <p class="list__content__time">
+                                    06.2023 - Present</p>
+                                <p class="list__content__location">Designer Front-end</p>
+                                <p class="list__content__address">Datahouse</p>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- working skills and knowledges -->
+
+            <div class="wrapper3">
+
+                <!-- Working skill -->
+                <div class="list3--left">
+                    <div>
+                        <p class="list-title-name">Working Skills</p>
+                    </div>
+
+
+
+                    <div class="list__working">
+                        <div class="list__working__item1">
+                            <div style="gap:297px;" class="list__working_content">
+                                <p class="list__working__content__main">HTML</p>
+                                <p class="list__working__content__percent">85%</p>
+                            </div>
+
+                            <label for="progress__working__item1"></label>
+                            <progress id="progress__working__item1" value="316" max="350"> 85% </progress>
+
+                        </div>
+
+                        <div class="list__working__item2">
+                            <div style="gap:307px;" class="list__working_content">
+                                <p class="list__working__content__main">CSS</p>
+                                <p class="list__working__content__percent">55%</p>
+                            </div>
+
+                            <label for="progress__working__item2"></label>
+                            <progress id="progress__working__item2" value="244" max="350"> 55% </progress>
+
+                        </div>
+
+
+                        <div class="list__working__item3">
+                            <div style="gap:253px;" class="list__working_content">
+                                <p class="list__working__content__main">JavaScript</p>
+                                <p class="list__working__content__percent">65%</p>
+                            </div>
+                            <label for="progress__working__item3"></label>
+                            <progress id="progress__working__item3" value="289" max="350"> 65% </progress>
+                        </div>
+
+
+
+                        <div class="list__working__item4">
+                            <div style="gap:277px;" class="list__working_content">
+                                <p class="list__working__content__main">ReactJS</p>
+                                <p class="list__working__content__percent">72%</p>
+                            </div>
+                            <label for="progress__working__item4"></label>
+                            <progress id="progress__working__item4" value="273" max="350"> 72% </progress>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <di class="list3--right">
+                    <div>
+                        <p class="list-title-name">Knowledges</p>
+                    </div>
+
+                    <div class="list__knowledges_tag">
+
+
+                        <p class="tag">HTML</p>
+                        <p class="tag">CSS</p>
+                        <p class="tag">JavaScript</p>
+                        <p class="tag">ReactJS</p>
+                        <p class="tag">NextJS</p>
+                        <p class="tag">NodeJS</p>
+                        <p class="tag">Express</p>
+                        <p class="tag">MongoDB</p>
+                        <p class="tag">Mongoose</p>
+                        <p class="tag">PhotoShop</p>
+                        <p class="tag">Graphic Design</p>
+                        <p class="tag">Photography</p>
+                        <p class="tag">Time Management</p>
+                        <p class="tag">Flexibility</p>
+
+
+                    </div>
+
+            </div>
+
+
+            <!-- work history -->
+            <div class="wrapper4">
+                <div class="list__title">
+                    <img src="../icons/icon -kinh nghiẹm.png" alt="icon history work">
+                    <p class="list-title-name">Work History</p>
+                </div>
+
+                <div style="background-color: rgb(216, 216, 213);" class="list__content">
+                    <div style="background-color: rgb(240, 240, 130);" class="list__content__item">
+                        <div class="list__content__title">
+                            <p class="list__content__name">Bookese Web App:</p>
+                            <p class="list__content__time">11.2022 - Present (Wiicamp)</p>
+                        </div>
+                        <ul class="list__content__description">
+                            <li>My position: Front-end developer.</li>
+                            <li>Description: Web application is designed in 3 parts:
+                                <ol>
+                                    <li>Admin manages the entire system.</li>
+                                    <li>Business owners create hotels, rooms, travel news, booking management, revenue
+                                        management.</li>
+                                    <li>Users search for hotels, facilities and services provided, book and pay, view
+                                        news about tourist attractions.</li>
+                                </ol>
+                            </li>
+                            <li>Team size: 7.</li>
+                            <li>Technologies: React JS | Node JS | Socket IO | MongoDB.</li>
+                        </ul>
+                    </div>
+
+
+                    <div style="background-color: rgb(240, 240, 130);" class="list__content__item">
+                        <div class="list__content__title">
+                            <p class="list__content__name">Vivumall Web App:</p>
+                            <p class="list__content__time">09.2022 - Present (Wiicamp)</p>
+                        </div>
+
+                        <ul class="list__content__description">
+                            <li>My position: Front-end developer | Back-end developer.</li>
+                            <li>Description: The web application is designed in 2 parts:
+                                <ol>
+                                    <li>Manage the organization and branches of an enterprise.</li>
+                                    <li>Manage employees, projects, revenue, use as a portal page.</li>
+                                </ol>
+                            </li>
+                            <li>Team size: 5.</li>
+                            <li>Technologies: React JS | Node JS | MongoDB.</li>
+                        </ul>
+
+                    </div>
+
+                    <div style="background-color: rgb(240, 240, 130);" class="list__content__item">
+                        <div class="list__content__title">
+                            <p class="list__content__name">SmartQA</p>
+                            <p class="list__content__time">06.2020 - 10.2020 (Orient software)</p>
+                        </div>
+
+                        <ul class="list__content__description">
+                            <li>Customer: Japan.</li>
+                            <li>My position: Front-end developer.</li>
+                            <li>Description: Application for task management, labeling, prioritization and translation
+                                support in 4 languages.</li>
+                            <li>Team size: 4.</li>
+                            <li>Technologies: React JS | Django | Firebase | Socket IO | Stripe | Google service.</li>
+                        </ul>
+
+                    </div>
+                    <div style="background-color: rgb(240, 240, 130);" class="list__content__item">
+                        <div class="list__content__title">
+                            <p class="list__content__name">Skribenta</p>
+                            <p class="list__content__time">
+                                05.2020 - 06.2020 (Orient software)</p>
+                        </div>
+
+                        <ul class="list__content__description">
+                            <li>Customer: Excosoft Company - Sweden.</li>
+                            <li>My position: Designer.
+                            </li>
+                            <li>Description: Icon design for the toolkit.</li>
+                            <li>Team size: 1.</li>
+                        </ul>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: blanchedalmond; padding: 20px 0px 30px 0;" class="wapper5">
+                <p class="footer-title"> Clients</p>
+                <div class="brand-list">
+                    <img src="../../images/brand.svg" alt="">
+                    <img src="../../images/brand 4.png" alt="">
+                    <img src="../../images/brand (1).svg" alt="">
+                    <img src="../../images/brand (2).svg" alt="">
+                    <img src="../../images/brand (3).svg" alt="">
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <p style="padding: 20px 0;
+            text-align: center;
+            margin:0px;
+            font-size: 1rem;
+            line-height: 1.75rem;
+            background-color: rgb(127, 248, 248);" class="lisence">© Create by Thành Luân</p>
+        </section>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="aa1" id="root"> Thay thế</div>
+    <div class="aa2"> Thay thế2</div>
+    <div class="aa3"> Thay thế3</div>
+
+    <form name="myForm" onsubmit="return validateForm()">
+        Ten: <input type="text" name="name">
+        Tuoi: <input type="number" name="age">
+        Dia chi: <input type="text" name="address">
+        <button type="submit"> Gui </button>
+    </form>
+
+    <script>
+            axios.get ('https://dummyjson.com/products')
+            .then(function (response)) {
+                //handle sucess
+                console.log(response.data);
+
+                const root = document.getElementById("root");
+                root.appendChild(list);
+
+                for(let i =0; i <response.data.products.length;i++ ){
+                    const item = document.createElement('li');
+                    
+                }
+            }
+
+        // function validateForm() {
+        //     const form = document.forms["myForm"];
+
+        //     const name = form['name'].value;
+        //     const age = form['age'].value;
+
+        //     const errors = [];
+
+        //     if (!name) errors.push("Ten ko ddc bor troong");
+        //     if (!name) errors.push("Ten ko ddc bor troong");
+
+        //     if(errors.length > 0){
+        //        alert(errors.join("\n"))
+
+        //     } else {
+        //            alert("TT chinh xac")
+        //     }
+        // }
+
+        // function valdateForm() {
+        //     const form = document.forms["myForm"];
+        //     console.log('form', form);
+        //     const name = form['name'].value;
+        //     const age = form['age'].value;
+
+        //     const errors =[];
+
+        //     if(!name) errors.push("Ten ko ddc bor troong");
+        //     if(!name) errors.push("Ten ko ddc bor troong");
+
+        //     if(errors.length > 0){
+        //        alert(errors.join("\n"))
+
+        //     } else {
+        //            alert("TT chinh xac")
+        //     }
+        // }
+    </script>
+
+    <!-- <script>
+
+        // function valdateForm (){
+        //     let x = document.forms["myForm"]["name"].value;
+        //     if (x == ""){
+        //         alter ("Ten khong duoc bo trong ")
+        //     }
+
+        //     let y = document.forms["myForm"]["name"].value;
+        //     if (y == ""){
+        //         alter ("Ten khong duoc bo trong ")}
+        // }
+
+        
+
+
+
+
+
+
+
+
+        //    const elementById = document.getElementById("root");
+        //    const pElm = document.createElement('p');
+        //    pElm.innerText = "Tran  Thanh  Luan";
+        //    pElm.className = "name";
+        //    pElm.style.fontWeight = ' Bold';
+        //    pElm.style.fontSize = '50px';
+
+        //    elementById.appendChild(pElm);
+
+        //    const elementByTagName = document.body;
+        //     console.log(">> ",  elementByTagName);
+ 
+        // const elm = document.querySelectorAll('div.aa3');
+        // elm[0].style.fontSize = '25px';
+        // // elm[0].style.background= 'red';
+        // console.log(">>>", elm);
+
+
+
+
+        //    console.log(" ", element)
+
+        //    element.style.backgroundColor= 'red';
+           
+        //    element.style.fontSize= '60px';
+           
+        //    element.style.fontWeight= 'Bold';
+           
+        //    element.style.backgroundColor= 'red';
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script> -->
+</body>
+
+</html>

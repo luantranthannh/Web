@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.search {
+    margin-top: 10px;
+}
+
+.search input {
+    padding: 5px;
+    width: 200px;
+}
+
+.search button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.main-content {
+    flex: 3;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+.product img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.product h3 {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.product p {
+    font-size: 10px;
+}
+
+.product button {
+    font-size: 10px;
+    padding: 2px 5px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.btn:hover{
+    background:rgb(253, 136, 2);
+}
+/* CSS Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+/* Thêm vào đoạn mã CSS ở trên, chúng ta đã thêm một Media Query để điều chỉnh bố cục của trang web khi kích thước màn hình nhỏ hơn hoặc bằng 768px. Khi kích thước màn hình nhỏ, container sẽ chuyển sang kiểu column, khiến sidebar được hiển thị lên trước main-content.
+
+Với việc sử dụng Media Queries, trang web của bạn sẽ trở nên responsive và tốt hơn trên các thiết bị di động và các màn hình nhỏ hơn. */
+
+
+
+
+

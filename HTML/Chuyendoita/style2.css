@@ -1,0 +1,173 @@
+.container {
+    width: 850px;
+    margin: auto;
+    color: #333;
+    font-size: 1.2rem;
+
+}
+
+.header {
+    flex-direction: column;
+    background-color: #333;
+    position: relative;
+    height: 150px;
+    border-radius: 5px;
+
+}
+
+.header_audio {
+    width: 100%;
+    position: absolute;
+    margin-top: 100px;
+    height: 35px;
+    border-radius: 0px;
+}
+
+
+.image-singer {
+    width: 100px;
+    height: 100px;
+    margin: 0px 0 0 10px;
+
+}
+
+
+
+.list__function {
+    position: relative;
+}
+
+.list__function ul {
+    margin-top: 42px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.list__function .dowload_icons {
+    position: relative;
+    margin: 28px 50px 0 0;
+
+}
+
+.list__function .dowload_icons img {
+    position: absolute;
+    margin-left: -24px;
+}
+
+.list__function .dowload_icons:hover {
+    cursor: pointer;
+    color: #2daaed;
+
+}
+
+.list_song {
+    background-color: rgb(247, 255, 137);
+    width: 808px;
+    height: 180px;
+    border: 1px solid black;
+    overflow: scroll;
+    border-radius: 5px 5px 0px 0px;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    border-bottom: 1px solid #ccc;
+    font-size: medium;
+}
+
+.song-title {
+    flex: 1;
+}
+
+.icons {
+    display: flex;
+    gap: 7px;
+}
+
+.icon {
+    padding: 3px 3px;
+    /* background-color:; */
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* main lyrics */
+
+.title__lyric {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    height: 28px;
+    outline: none;
+    border: none;
+    width: 100px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.iconcoppy {
+    vertical-align: middle;
+}
+
+.main__content {
+    margin-top: 50px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(243, 250, 165);
+}
+
+.line {
+    width: 200;
+    height: 5px;
+    border-top: 1px solid black;
+    opacity: 0.7;
+}
+
+.detail__lyric {
+    font-size: medium;
+
+}
+
+hr {
+    font-weight: bold;
+    font-size: large;
+    opacity: 0.45;
+}

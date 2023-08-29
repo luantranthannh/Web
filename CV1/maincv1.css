@@ -1,0 +1,517 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/background-img.jpg);
+}
+
+.container{    
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+/* sidebar-bên trái đầu tiên về personal information  */
+
+#avt{
+    box-shadow: 0px 10px 22px 0px #0000001A;
+    width: 240px;
+    height: 240px;
+    left: 80px;
+    border-radius: 20px;          
+}
+
+#name-candidate{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#position-candidate{
+    
+    display: inline-block;
+    font-size: 16px; 
+    font-weight: 500;
+    line-height: 24px;
+    text-align:center;
+    border-radius: 8px;
+    background-color: #FA5252;
+    margin-left: 93px; 
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+/* các icon socials */
+.social-icons{
+    display:flex;
+    gap: 10px;
+    margin-left: 105px;
+    margin-bottom: 30px;
+
+}
+.facebook,.twitter,.instagram,.linkin{
+    background-color:#F3F6F7;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+   
+}
+.facebook img{
+    padding: 8px 14px ;
+  
+}
+.twitter img{
+    padding: 8px 14px ;
+    
+}
+.instagram img{
+    padding: 8px 14px ;
+}
+
+.linkin img{
+    padding: 8px 14px ;
+}
+
+/* các thông tin cá nhân */
+.cart{
+    border-radius: 16px;
+    background-color: hotpink;
+    height: 320px;
+    width: 340px;
+    margin-left:25px ;
+    margin-bottom: 30px; 
+    
+    }
+    
+    /* lam phan so dt, location */
+    .phone,.birthday,.location,.email{
+        display: flex;
+        gap:10px;
+        padding: 30px 30px 0px 30px;
+        
+        /* align-items: center; --> canh giữa, ngang hàng nhau */
+    }
+    .cart-icon{
+        background-color:#FFFFFF;
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+        
+    }
+    .cart-icon img{
+        padding: 8px 14px ;
+    }
+    .cart-infor p{
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 18px;
+
+    }
+    
+    .email,.birthday,.location{
+        display: flex;
+        gap:10px;
+        padding: 10px 30px 0px 30px;
+    }
+
+    #email-address{
+        width: 226px; 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    hr{
+        border: 1px solid #cccaca;
+        height: 0px;
+        width: 280px;
+        border-radius: nullpx;    
+    }
+
+/* icon download CV */
+.button{
+    display: inline-flex;
+    justify-content: center;
+    height:55px;
+    width: 250px;
+    background-color: #e97474;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 88px;
+}
+.button:hover{
+    background:linear-gradient(93.74deg, #FA5252 0%, #DD2476 100%);;
+}
+
+.button--text,.button--icon{
+    display: inline-flex;
+    align-items:center;
+    color: #EDF2F2;
+    height: 100%;
+
+}
+.button--icon{
+    width: 22px;
+    height: 22px;
+    padding: 15px 10px 18px 5px;
+}
+
+
+/* Navbar-bên phải trên */
+
+.navbar{
+    display: flex;
+}
+
+.navbar img {
+    padding: 17px 0 0 0;
+}
+.navbar span{
+    font-size: 13px;
+}
+
+
+.navbar-about{
+    width: 84px;
+    height:84px;
+    border-radius: 12px;
+    background-color: #F3F6F6 ;
+    /* background: linear-gradient(153.43deg, #FA5252 16.67%, #DD2476 100%); */
+    text-align: center;
+    margin: 30px 20px 30px 30px;
+    
+}
+
+.navbar-about:hover{
+    background:rgb(173, 170, 170);
+}
+
+.navbar-education,.navbar-experience,.navbar-history,.navbar-knowledge{
+    width: 84px;
+    height:84px;
+    border-radius: 12px;
+    background-color: #F3F6F6;
+    text-align: center;
+    margin: 30px 20px 30px 0px;
+    
+}
+
+.navbar-education:hover{
+    background:rgb(173, 170, 170);
+}
+
+.navbar-experience:hover{
+    background:rgb(173, 170, 170);
+    
+}
+
+.navbar-history:hover{
+   background:rgb(173, 170, 170);
+}
+
+.navbar-knowledge:hover{
+    background:rgb(173, 170, 170);
+}
+
+
+/* main */
+/* Phần 1: wrapper */
+
+.wrapper{
+    padding: 60px;
+    background-color: #f3b1b1;
+    border-radius:12px 12px 0px 0px;
+   
+}
+
+
+.wrapper__header__title{
+    position: relative;  
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.wrapper__header__title::after{
+    position:absolute;
+    content:"";
+    width: 250px;
+    height: 3.5px ;
+    top: 50%;
+    margin-left: 20px;
+    background-color: #FA5252;
+    align-items: center;
+
+}
+
+
+.list__title {
+        display: flex;
+        align-items: center;
+        /* margin-top: 90px;  */
+        gap:15px; 
+}
+
+.list-title-name{
+    font-weight: 500;
+    font-size: 1.625rem;
+    line-height: 2.4375rem;
+}
+
+.list__content__description{
+    margin-top: 0px;
+    font-size: 0.925rem;
+    line-height: 1.875rem;
+}
+li{
+    display: list-item;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* education + experience */
+
+.wrapper2{
+  padding: 60px;
+  background-color: #eff0b0;
+}
+
+.wrapper__list{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+
+}
+
+
+.list--left,.list--right{
+    width: 370px;
+}
+.list__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-weight: 500;
+   
+}
+.list-title-name{
+    margin: 0px;
+    font-weight: 500;
+    
+}
+
+.list__content{
+    display: flex;
+    flex-direction: column;
+    gap:15px
+}
+.list__content__item1,.list__content__item2,.list__content__item3{
+    display: inline-block;
+    padding: 15px 20px 15px 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: #f5e4e4;;
+}
+.list__content__item2{
+    background: #f7f8b7;;
+}
+.list__content__time{
+    font-size: 0.875rem;
+    margin:1px;
+    line-height: 1.875rem;
+}
+.list__content__location{
+    font-size: 1.125rem;
+    margin:1px;
+    line-height: 1.875rem;
+   
+}
+.list__content__address{
+    font-size: 0.875rem;
+ margin:1px;
+ line-height: 1.875rem;
+}
+/* Working skills */
+
+.wrapper3{
+    padding: 60px ;
+    background-color: #99d9e9;
+    gap:30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+.list3--left,.list3--right{
+    width: 370px;
+}
+.list3--left{
+    background-color: #DD2476;
+}
+
+.list3--right{
+    background-color: #e97474;
+}
+.list__working {
+    position: relative;   
+}
+
+.list__working__item1,.list__working__item2,.list__working__item3,.list__working__item4{
+    margin-top: 20px;
+}
+.list__working_content{
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.list__working__content__main{
+    text-align: left;
+}
+
+.list__working__content__percent{
+    text-align: right;
+}
+
+.list__working_content p{
+   margin-bottom: 0px;
+}
+
+#progress__working__item1,#progress__working__item2,#progress__working__item3,#progress__working__item4{
+ 
+    width: 370px;
+    height: 13px;
+}
+
+#progress__working__item1 {
+    accent-color: #FF6464;
+}
+
+#progress__working__item2 {
+    accent-color: #9272D5;
+}
+#progress__working__item3 {
+    accent-color: #FF6464;
+}
+
+#progress__working__item4 {
+    accent-color: #CA56F2 ;
+}
+
+.list__knowledges {
+    position: relative;   
+}
+
+.list__knowledges{
+    display: flex;
+}
+.tag{
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    background-color: #99d9e9;
+}
+
+
+/* history work */
+
+.wrapper4{
+    padding: 60px;
+    background-color: #f3b1b1;
+}
+
+.list__content__item{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 15px 15px 15px 20px;
+    box-sizing: border-box;
+    border-radius: 19px;
+}
+
+.list__content__title{
+    display: flex;
+    flex-wrap: wrap;
+    /* text-align: center; */
+}
+
+.list__content__name{
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+
+
+/* Phần 5: Wrapper 5 dán 5 logo tên công ty */
+
+
+
+.footer-title{
+    
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42px;
+    /* background-color: #99d9e9; */
+ 
+
+}
+.brand-list{
+    /* display: flex; */
+    /* background-color: #d8cdf0; */
+    display: flex;
+  justify-content: space-between;
+  padding:  5px 70px ;
+    
+}
+
+.brand-list img{
+    width: 12%; /* Chỉnh kích thước ảnh cho phù hợp */
+    /* max-width: 30% Đảm bảo ảnh không vượt quá kích thước của div */
+}
+
+
+
+.license {
+    padding: 20px 0;
+    text-align: center;
+    margin:0px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
