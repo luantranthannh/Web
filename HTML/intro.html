@@ -124,7 +124,8 @@
     <p><a href="mailto:luan.tran@student.passerellesnumeriques.org">Send email</a></p> 
 
     <ul>4. Phần tử khối, Phần tử nội tuyến
-
+        <p>The inline khong duoc bao ben ngoai the block</p>
+        <!-- ex: <strong><h1>ấ;skfjhafk</h1></strong>->>Lỗi, vi phạm quy tắc  -->
         <p style="background-color: aqua;">4.1. Phần tử khối (h1...h6);p;...
             <u style="background-color: rgb(226, 255, 6);"> Phần tử nội tuyến: b, s, u, i,.. </u>
         </p>
@@ -471,6 +472,24 @@
                 Tran sform
       </div>
 
+<!-- --------------------------------- -->
+
+<input id="checkbox-input" type="checkbox">Ẩn HÌNH ẢNH
+<figure>
+    <img src="https://cdn-icons-png.flaticon.com/256/6049/6049924.png" alt="LogoF8">
+</figure>
+<p>kcksksk</p>
+
+<style >
+    figure{
+        transition: 0.5s;
+    }
+ #checkbox-input:checked ~ figure {
+        /* visibility: hidden; */
+        display:none;
+        opacity: 0;
+}
+</style>
 </body>
 
 </html>

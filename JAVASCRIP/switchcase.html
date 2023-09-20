@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Form</h2>
+<form action="">
+     <input type="number" name="" id="number" >
+     <p id="kiemtra"> Ket qua la</p>
+     <input type="button" value="ok" onclick="Check()">
+     <input type="button" value="Cancel" onclick="Cancel()">
+    </form>
+     <script>
+        function Check(){
+            var x = document.getElementById("number").value;
+            var y = x%2;
+            switch (y) {
+                case 0:
+                    text = x + " la so chan";
+                    break;
+                default:
+                    text = x + " la so le"
+            }
+            document.getElementById("kiemtra").innerHTML= text;
+        }
+
+        function Cancel(){
+            document.getElementById("number").value="";
+            document.getElementById('kiemtra').innerHTML = "Ket qua la";
+        }
+     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <p id="demo"></p>
+    <p id="ht"></p>
+    <p id="hl"></p> -->
+    <!-- <script>
+        switch (new Date().getDay()) {
+            case 6:
+                text = "Today is Saturday";
+                break;
+            case 0:
+                text = "Today is Sunday";
+                break;
+            default:
+                text = "Looking forward to the Weekend";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script> -->
+
+    <!-- <script>
+        switch ("BinhDinh") {
+            case "QuangNam ":
+                text = "Quang Nam";
+                break;
+            case "BinhDinh":
+                text = "Binh Dinh";
+                break;
+            default:
+                text = "Hometown";
+        }
+        document.getElementById("ht").innerHTML = text;
+    </script> -->
+
+    <!-- <script>
+        switch (7) {
+            case 7.8:
+                text = "HSK" + 7.8;
+                break;
+            case 9.1:
+                text = "HSG" + 9.1;
+                break;
+            default:
+                text = "Dot";
+        }
+        document.getElementById("hl").innerHTML = text;
+    </script> -->
+
+    <!-- <script>
+        var isTrue = true;
+        switch (isTrue) {
+            case true:
+                text = "1 >2";
+                break;
+            case false:
+                text = " 2#1 ";
+                break;
+            default:
+                text="000";
+        }
+        document.getElementById("sthing").innerHTML = text;
+    </script> -->
+    <!-- <p id="sthing">èaa</p> -->
+</body>
+
+</html>

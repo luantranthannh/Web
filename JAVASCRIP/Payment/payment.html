@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+       
+
+        .row {
+            justify-content: center;
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .row p {
+            width: 20%;
+        }
+
+        p {
+            margin: 10px 0;
+            width: 40%;
+
+        }
+
+        input[type="number"] {
+            width: 120px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+
+
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #total,
+        #returnMoney {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="small-container">
+        <h1>Ứng dụng Tính Toán</h1>
+        <div class="row">
+            <p>Nhập số tiền khách có </p>
+            <input type="number" id="input_cash" value="">
+        </div>
+
+        <div class="row">
+            <p>Nhập số lượng món hàng </p>
+            <input type="number" id="quantity_product" value="">
+        </div>
+
+        <div class="row">
+            <p>Nhập đơn giá</p>
+            <input type="number" id="price_product" value="">
+        </div>
+
+        <div class="row">
+            <p id="total">Tổng tiền</p>
+            <button onclick="calculateTotal()">Tổng Tiền</button>
+        </div>
+
+        <div class="row">
+            <p id="returnMoney">Tiền dư</p>
+            <button onclick="calculateReturnMoney()">Tiền trả lại</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+
+        function calculateTotal() {
+            var quantity = parseInt(document.getElementById("quantity_product").value);
+            var price = parseInt(document.getElementById("price_product").value);
+            var cash = parseInt(document.getElementById("input_cash").value);
+            var total = quantity * price;
+
+            document.getElementById('total').innerHTML = "Tổng tiền: " + total;
+
+        }
+
+
+
+
+        function calculateReturnMoney() {
+            var quantity = parseInt(document.getElementById("quantity_product").value);
+            var price = parseInt(document.getElementById("price_product").value);
+            var cash = parseInt(document.getElementById("input_cash").value);
+
+            var total = quantity * price;
+            var returnMoney = cash - total;
+            if (cash < total) {
+                document.getElementById('returnMoney').innerHTML = "Tiền hiện tại của bạn không đủ thanh toán, cho đơn hàng ";
+
+            }
+            else {
+                document.getElementById('returnMoney').innerHTML = "Tiền trả lại: " + returnMoney;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

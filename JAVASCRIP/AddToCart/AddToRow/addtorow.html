@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+     <script src="./addtoRow.js"></script>
+     <link rel="stylesheet" href="./addtoRow.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="frm" id="frm">
+            <div>
+                <label for="product">
+                    Product Name:
+                    <input type="text" name="product" id="product" required>
+                </label>
+
+                <label for="img">
+                    Product Picture:
+                    <input type="file" name="img" id="img" required>
+                </label>
+                <label for="price">
+                    Product Price:
+                    <input type="number" name="price" id="price" required>
+                </label>
+
+
+            </div>
+
+            <div>
+                <button type="button" onclick="Add()" class="btn btn-primary">Add to cart
+
+                </button>
+                <button type="button" onclick="remove()" class="btn btn-dark">Remove to cart
+
+                </button>
+            </div>
+
+        </form>
+
+        <h4>Điện thoại nổi bật nhất</h4>
+        <hr class="new">
+        <div class="row" style="padding-left: 20px;">
+
+        </div>
+    </div>
+
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./addtoTable.css">
+    <script src="./addtoTable.js"></script>
+    <title>Add to Cart - Table</title>
+</head>
+
+<body>
+    <h1>New Product</h1>
+    <hr>
+    <form name="frm">
+
+        <div class="row">
+            <label for="pname">Product name </label>
+            <input type="text" name="pname" id="pname">
+        </div>
+
+        <div class="row">
+            <label for="qty">Quantity </label>
+            <input type="number" name="qty" id="qty">
+        </div>
+
+        <div class="row">
+            <label for="up">Unit price </label>
+            <input type="number" name="up" id="up">
+        </div>
+
+        <div class="row">
+            <label for="dc">Discount </label>
+            <input type="number" name="dc" id="dc">
+        </div>
+
+        <button type="button" onclick="sell()">Sell</button>
+        <button type="button" onclick="cancell()">Cancel</button>
+        <button type="button" onclick="deleteAll()">Delete All</button>
+
+
+    </form>
+    <table id="tbl">
+        <tr>
+            <th>ID</th>
+            <th>Product name</th>
+            <th>Quantity</th>
+            <th>Unit price</th>
+            <th>Discount</th>
+            <th>Subtotal</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+
+    <script>
+        
+    </script>
+
+</body>
+
+</html>

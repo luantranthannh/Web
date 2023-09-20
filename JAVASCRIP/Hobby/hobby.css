@@ -1,0 +1,50 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#result, #discount, #returnMoney {
+    font-size: 18px;
+    font-weight: 540;
+    margin-top: 10px;
+}
+
+input[type="button"] {
+    padding: 7px 15px;
+    margin: 10px 5px;
+    font-size: 16px;
+    background-color: #ff6a00;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    min-width:100px;
+}
+
+input[type="button"]:hover {
+    background-color: #ff8800;
+}
+
+
+

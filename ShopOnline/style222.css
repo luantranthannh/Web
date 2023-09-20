@@ -255,7 +255,6 @@ h4 {
     width:80px;
     margin-top:20px;
     border-radius: 50%;
-   
     padding: 5px;
     background: linear-gradient(135deg,rgba(238, 130, 6, 0.767),rgb(212, 34, 28) 50%,transparent 50%);
     background-size: 250%;
@@ -583,12 +582,11 @@ table{
 }
 th{
     text-align: left;
-    
     padding: 5px;
     color:#fff;
     background:#ff523b;
     font-weight: normal;
- }
+}
 
 
 td{
@@ -623,7 +621,6 @@ td img{
 }
 td:last-child{
     text-align: right;
-
 }
 
 th:last-child{
@@ -740,6 +737,8 @@ form a{
 
     }
 
+
+    
 
 
 

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Traffic Light</title>
+    <style>
+        #red,
+        #yellow,
+        #green {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="traffic-light">
+        <div class="light" id="red"></div>
+        <div class="light" id="yellow"></div>
+        <div class="light" id="green"></div>
+      </div>
+    <button onclick="changeTrafficLight()">Click To Start</button>   
+<script>
+    function changeTrafficLight() {
+      const redLight = document.getElementById("red");
+      const yellowLight = document.getElementById("yellow");
+      const greenLight = document.getElementById("green");
+    
+      setTimeout(function() {
+        // Tắt đèn đỏ và bật đèn xanh sau 5 giây
+        redLight.style.background = "gray";
+        greenLight.style.background = "green";
+    
+        setTimeout(function() {
+          // Tắt đèn xanh và bật đèn vàng sau 2 giây
+          greenLight.style.background = "gray";
+          yellowLight.style.background = "yellow";
+    
+          setTimeout(function() {
+            // Tắt đèn vàng và bật đèn đỏ sau 5 giây
+            yellowLight.style.background = "gray";
+            redLight.style.background = "red";
+    
+            // Lặp lại quy trình chuyển màu sau khi đã bật đèn đỏ
+            setTimeout(changeTrafficLight, 5000);
+          }, 1000);
+        }, 2000);
+      }, 1000);
+    }
+    
+    // Bắt đầu quy trình chuyển màu ban đầu
+    changeTrafficLight();
+    </script>
+
+
+
+</body>
+
+</html>

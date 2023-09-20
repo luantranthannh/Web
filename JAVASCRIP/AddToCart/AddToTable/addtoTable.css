@@ -1,0 +1,75 @@
+h1{
+    text-align: center;
+}
+
+form {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+
+}
+
+label {
+    width: 150px;
+}
+
+input[type="text"],
+input[type="number"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+
+
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff523b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+button:hover {
+    background-color: #fc3e24;
+}
+
+#tbl {
+    margin-top:40px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tbl th,
+#tbl td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+}
+
+#tbl th {
+    background-color: #ff523b;
+    color: #fff;
+}
+
+
+
+#tbl tr:hover {
+    background-color: #e0e0e0;
+}

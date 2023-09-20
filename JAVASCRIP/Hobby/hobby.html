@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Hobby</title>
+    <link rel="stylesheet" href="./hobby.css">
+    <script  src="./hobby.js"></script>
+</head>
+
+<body>
+    <h1>Hobby</h1>
+    <form>
+        <input type="checkbox" id="hoppy1" name="hoppy1" value="500">
+        <label for="hoppy1"> Swimming </label>
+
+        <input type="checkbox" id="hoppy2" name="hoppy2" value="600">
+        <label for="hoppy2"> Football</label>
+
+        <input type="checkbox" id="hoppy3" name="hoppy3" value="200">
+        <label for="hoppy3">Dance</label>
+
+        <input type="checkbox" id="hoppy4" name="hoppy4" value="1000">
+        <label for="hoppy4">Singer</label>
+    </form>
+
+    <form>
+        <input type="radio" id="sinhvien" name="person" value="sinhvien">
+        <label for="sinhvien">Sinh viên</label>
+
+        <input type="radio" id="hocsinh" name="person" value="hocsinh">
+        <label for="hocsinh">Học sinh</label>
+        <input type="radio" id="dilam" name="person" value="dilam">
+        <label for="dilam">Đi làm</label>
+    </form>
+
+    <p id="result">Tổng tiền </p>
+    <p id="discount"> Giảm giá </p>
+    <p id="returnMoney">Tiền cần trả </p>
+
+    <input type="button" value="OK" onclick="CheckPayment()">
+    <input type="button" value="Cancel" onclick="Cancel()">
+
+    
+</body>
+
+</html>

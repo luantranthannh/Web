@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./lesson2.js"></script>
+</head>
+<body>
+    <!-- <p id="kq">ket qua la</p> -->
+     
+    <!-- <script>
+        var a=10;
+        var b=25;
+        var c= a+b;
+        document.write(c);
+        adas;
+        var x = 100+200;
+        document.write(x);
+
+    </script> -->
+
+
+    <!-- <script>
+        var a = prompt("Input price ", " 0");
+        alert(a);
+    </script> -->
+
+    <!-- <script>
+        // var status=confirm("do you want to play?");
+        // alert(status);
+         
+        if (confirm("Do you want to play")){
+            var n = prompt(" enter your name: ");
+            alert(n + " ẹnjoy game");
+
+        }
+    </script> -->
+   
+
+    <!-- <script>
+        function chuvi(a,b){
+            return (a+b)*2;
+        }
+
+        function dientich(a,b){
+            return a*b;
+        }
+
+        var a = parseInt(prompt("Nhap so a: "));
+        var b = paseInt(prompt("Nhap so b: "));
+
+        var chuvi = chuvi(a,b);
+        var dientich = dientich(a,b);
+
+        document.write("dien tich " + a  + " * " + b + " là " + dientich);
+
+
+    </script> -->
+
+    <p>Weicome</p>
+
+    <button onclick = "functionHCN()" >DT_HCN</button>
+    <button onclick = "functionHV()" >DT_HV</button>
+    <button onclick = "functionHello()" >Hello</button>
+
+    <p id="hcn">Dien tich hinh chu nhat la: </p>
+    <p id="hv">Dien tich hinh vuong la: </p>
+    <p id="hello">Welcome to PNV</p>
+
+
+    <script>
+       
+
+        function functionHCN(){
+            var a = parseInt(prompt("Nhap so a: "));
+            var b = parseInt(prompt("Nhap so b: "));
+            var dt = a*b;
+            document.getElementById('hcn').innerHTML = "Dien tich hinh chu nhat la:" +  dt;
+
+        }
+
+
+        function functionHV(){
+            var a = parseInt(prompt("Nhap  do dai canh: "));
+            var dt = a*a;
+            document.getElementById('hv').innerHTML = "Dien tich hinh vuong la: " +  dt;
+
+        }
+
+        function functionHello(){
+            var name = prompt("Enter your name");
+            document.getElementById('hello').innerHTML = "Welcome " + name + " to PNV!"; 
+        }
+
+        
+
+    </script>
+
+</body>
+</html>
