@@ -5,9 +5,6 @@ function CheckPayment() {
     var checkbox3 = document.getElementById("hoppy3");
     var checkbox4 = document.getElementById("hoppy4");
 
-
-
-
     var hobbyName1 = document.querySelector('label[for="hoppy1"]').textContent;
     var hobbyName2 = document.querySelector('label[for="hoppy2"]').textContent;
     var hobbyName3 = document.querySelector('label[for="hoppy3"]').textContent;
@@ -23,6 +20,7 @@ function CheckPayment() {
 
     for (var i = 0; i < checkboxIds.length; i++) {
         var checkbox = (checkboxIds[i]);
+        
         if (checkbox.checked) {
             var hobbyPrice = parseInt(checkbox.value);
             selectedHobbies.push(hobbyNames[i] + ": " + hobbyPrice + "K");
@@ -51,6 +49,7 @@ function CheckPayment() {
     var returnMoney = totalPrice - discountAmount;
 
     var resultElement = document.getElementById("result");
+
     resultElement.innerHTML = "Thành tiền: " + selectedHobbies.join(", ") + ", Tổng: " + totalPrice + "K";
 
     document.getElementById('discount').innerHTML = "Giảm giá: " + discountAmount + "K";
